@@ -20,6 +20,9 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var BtnTakeSpin: UIButton!
     
+    @IBOutlet weak var BtnGoTimeline: UIButton!
+
+    
     @IBAction func BtnTakeSpin(sender: UIButton) {
         // ImgBackupTakeSpin.alpha = 1
         // Lightswitch.alpha = 1
