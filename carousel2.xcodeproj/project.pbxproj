@@ -14,6 +14,10 @@
 		5CC4E0391BB4E40600F4BCDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC4E0371BB4E40600F4BCDC /* LaunchScreen.storyboard */; };
 		5CC4E0441BB4E40600F4BCDC /* carousel2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4E0431BB4E40600F4BCDC /* carousel2Tests.swift */; };
 		5CC4E04F1BB4E40600F4BCDC /* carousel2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4E04E1BB4E40600F4BCDC /* carousel2UITests.swift */; };
+		5CC4E05D1BB4E4C700F4BCDC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4E05C1BB4E4C700F4BCDC /* Common.swift */; settings = {ASSET_TAGS = (); }; };
+		5CC4E0621BB4F12A00F4BCDC /* scrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4E0611BB4F12A00F4BCDC /* scrollView.swift */; settings = {ASSET_TAGS = (); }; };
+		5CC4E0A01BB5102D00F4BCDC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4E09F1BB5102D00F4BCDC /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5CC4E0A21BB51B1B00F4BCDC /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4E0A11BB51B1B00F4BCDC /* TutorialViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		5CC4E04A1BB4E40600F4BCDC /* carousel2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carousel2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC4E04E1BB4E40600F4BCDC /* carousel2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carousel2UITests.swift; sourceTree = "<group>"; };
 		5CC4E0501BB4E40600F4BCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC4E05C1BB4E4C700F4BCDC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		5CC4E0611BB4F12A00F4BCDC /* scrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollView.swift; sourceTree = "<group>"; };
+		5CC4E09F1BB5102D00F4BCDC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5CC4E0A11BB51B1B00F4BCDC /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = ../TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,11 @@
 		5CC4E02D1BB4E40600F4BCDC /* carousel2 */ = {
 			isa = PBXGroup;
 			children = (
+				5CC4E0601BB4E62600F4BCDC /* view controllers */,
 				5CC4E02E1BB4E40600F4BCDC /* AppDelegate.swift */,
-				5CC4E0301BB4E40600F4BCDC /* ViewController.swift */,
+				5CC4E05C1BB4E4C700F4BCDC /* Common.swift */,
 				5CC4E0321BB4E40600F4BCDC /* Main.storyboard */,
+				5CC4E0611BB4F12A00F4BCDC /* scrollView.swift */,
 				5CC4E0351BB4E40600F4BCDC /* Assets.xcassets */,
 				5CC4E0371BB4E40600F4BCDC /* LaunchScreen.storyboard */,
 				5CC4E03A1BB4E40600F4BCDC /* Info.plist */,
@@ -123,6 +133,16 @@
 				5CC4E0501BB4E40600F4BCDC /* Info.plist */,
 			);
 			path = carousel2UITests;
+			sourceTree = "<group>";
+		};
+		5CC4E0601BB4E62600F4BCDC /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CC4E09F1BB5102D00F4BCDC /* SignInViewController.swift */,
+				5CC4E0A11BB51B1B00F4BCDC /* TutorialViewController.swift */,
+				5CC4E0301BB4E40600F4BCDC /* ViewController.swift */,
+			);
+			name = "view controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC4E0311BB4E40600F4BCDC /* ViewController.swift in Sources */,
+				5CC4E0621BB4F12A00F4BCDC /* scrollView.swift in Sources */,
+				5CC4E05D1BB4E4C700F4BCDC /* Common.swift in Sources */,
+				5CC4E0A01BB5102D00F4BCDC /* SignInViewController.swift in Sources */,
+				5CC4E0A21BB51B1B00F4BCDC /* TutorialViewController.swift in Sources */,
 				5CC4E02F1BB4E40600F4BCDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
