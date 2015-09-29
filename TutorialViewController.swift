@@ -18,22 +18,9 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var Lightswitch: UISwitch!
     
-    @IBOutlet weak var BtnGoTimeline: UIButton!
 
-    
-    @IBAction func BtnTakeSpin(sender: UIButton) {
-        // ImgBackupTakeSpin.alpha = 1
-        // Lightswitch.alpha = 1
-        // Pagination.alpha = 0
-        UIView.animateWithDuration(0.7,
-            animations: {
-                self.ImgBackupTakeSpin.alpha = 1
-                self.Lightswitch.alpha = 1
-                self.Pagination.alpha = 0
-            },
-            completion: { (finished: Bool) in
-                return true
-        })
+    @IBAction func BtnGoTimeline(sender: AnyObject) {
+        performSegueWithIdentifier("TimelineSegue", sender: self)
     }
     
     
@@ -59,9 +46,18 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Set the current page, so the dots will update
         Pagination.currentPage = page
-        
-
-            print(Pagination.currentPage)
+                
+        if (page == 3) {
+            UIView.animateWithDuration(0.7,
+                animations: {
+                    self.ImgBackupTakeSpin.alpha = 1
+                    self.Lightswitch.alpha = 1
+                    self.Pagination.alpha = 0
+                },
+                completion: { (finished: Bool) in
+                    return true
+            })
+        }
 
     }
     
