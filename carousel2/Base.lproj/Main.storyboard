@@ -73,7 +73,7 @@
         <!--SignInViewController-->
         <scene sceneID="wOE-Ci-5Vd">
             <objects>
-                <viewController title="SignInViewController" id="3Ok-Wf-qzb" sceneMemberID="viewController">
+                <viewController title="SignInViewController" id="3Ok-Wf-qzb" customClass="SignInViewController" customModule="carousel2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hAM-fd-Ast"/>
                         <viewControllerLayoutGuide type="bottom" id="pCz-lV-LrO"/>
@@ -82,38 +82,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="login_form" translatesAutoresizingMaskIntoConstraints="NO" id="pil-bG-SSR">
-                                <rect key="frame" x="0.0" y="183" width="320" height="113"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8U-LX-SN4">
-                                <rect key="frame" x="20" y="203" width="280" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NbF-dS-jgn">
-                                <rect key="frame" x="20" y="247" width="280" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="login_text" translatesAutoresizingMaskIntoConstraints="NO" id="V0y-Mi-e71">
-                                <rect key="frame" x="0.0" y="100" width="320" height="70"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="sign_in_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="pLu-8S-DET">
-                                <rect key="frame" x="0.0" y="403" width="320" height="104"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_in_nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="kdl-v7-ari">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6B-9Y-HD4">
-                                <rect key="frame" x="11" y="409" width="297" height="65"/>
-                                <connections>
-                                    <segue destination="Aa2-FH-V1M" kind="modal" modalTransitionStyle="crossDissolve" id="XpB-7O-2Qq"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="RfZ-98-7IM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="login_form" translatesAutoresizingMaskIntoConstraints="NO" id="pil-bG-SSR">
+                                        <rect key="frame" x="0.0" y="175" width="320" height="113"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8U-LX-SN4">
+                                        <rect key="frame" x="20" y="195" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NbF-dS-jgn">
+                                        <rect key="frame" x="20" y="240" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="login_text" translatesAutoresizingMaskIntoConstraints="NO" id="V0y-Mi-e71">
+                                        <rect key="frame" x="0.0" y="75" width="320" height="70"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="sign_in_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="pLu-8S-DET">
+                                        <rect key="frame" x="0.0" y="300" width="320" height="104"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_in_nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="kdl-v7-ari">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6B-9Y-HD4">
+                                        <rect key="frame" x="10" y="300" width="297" height="65"/>
+                                        <connections>
+                                            <action selector="btnSignIn:" destination="3Ok-Wf-qzb" eventType="touchUpInside" id="EtP-We-L0g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <gestureRecognizers/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="oXF-Sk-ERI"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1000"/>
+                    <connections>
+                        <outlet property="EmailField" destination="O8U-LX-SN4" id="Nbr-eT-quR"/>
+                        <outlet property="LogInForm" destination="pil-bG-SSR" id="STK-vb-MGm"/>
+                        <outlet property="LogInText" destination="V0y-Mi-e71" id="bFL-Rk-mH2"/>
+                        <outlet property="PasswordField" destination="NbF-dS-jgn" id="oJs-DF-ukk"/>
+                        <outlet property="SignInScroll" destination="RfZ-98-7IM" id="lUc-rp-xf7"/>
+                        <outlet property="SignInText" destination="kdl-v7-ari" id="Qmr-gK-zuX"/>
+                        <segue destination="Aa2-FH-V1M" kind="modal" identifier="GoTutorialSegue" modalTransitionStyle="crossDissolve" id="e3e-2A-DJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wx-dY-oKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

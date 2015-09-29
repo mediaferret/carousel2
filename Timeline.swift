@@ -8,8 +8,10 @@
 
 import UIKit
 
+let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .Alert)
+
+
 class Timeline: UIViewController, UIScrollViewDelegate {
-    
     
     @IBOutlet weak var TimeLineScrollView: UIScrollView!
     @IBOutlet weak var Feed: UIImageView!
@@ -20,7 +22,7 @@ class Timeline: UIViewController, UIScrollViewDelegate {
         TimeLineScrollView.delegate = self
         
         TimeLineScrollView.contentSize = CGSize(width: 320, height: 1000)
-
+                
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,15 +30,5 @@ class Timeline: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }
