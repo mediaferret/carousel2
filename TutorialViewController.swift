@@ -18,8 +18,6 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var Lightswitch: UISwitch!
     
-    @IBOutlet weak var BtnTakeSpin: UIButton!
-    
     @IBOutlet weak var BtnGoTimeline: UIButton!
 
     
@@ -61,6 +59,10 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Set the current page, so the dots will update
         Pagination.currentPage = page
+        
+
+            print(Pagination.currentPage)
+
     }
     
 }
